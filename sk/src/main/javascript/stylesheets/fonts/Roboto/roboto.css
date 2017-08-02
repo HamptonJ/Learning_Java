@@ -1,0 +1,6 @@
+/* Your local CSS File */
+@font-face {
+    font-family: 'Roboto';
+    font-style: all;
+    src: local('Roboto'),url(./Roboto-Regular.ttf) format('truetype'), url(./Roboto-Bold.ttf) format('truetype');
+}

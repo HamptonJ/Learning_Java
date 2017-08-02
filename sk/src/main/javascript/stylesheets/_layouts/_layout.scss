@@ -1,0 +1,20 @@
+html, body, .viewport, #app, #root, #root > div {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.justText {
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.action {
+  &:hover {
+    color: $color-primary-3;
+  }
+
+  &:active {
+    color: black;
+  }
+}

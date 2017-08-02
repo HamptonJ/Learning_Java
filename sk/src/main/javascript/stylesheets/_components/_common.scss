@@ -1,0 +1,54 @@
+.listTable {
+  flex: 1 1;
+  overflow-y: auto;
+}
+
+.animatedList {
+  position: relative;
+}
+
+.listEntry {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 8px 24px;
+  transition: background-color .75s;
+
+  &:hover {
+    background-color: $color-primary-1;
+  }
+
+  .listActions {
+    flex: 0 0 24px;
+
+    .listAction {
+      height: 100%;
+      vertical-align: middle;
+
+      &:hover {
+        color: white;
+      }
+
+      &:active {
+        color: black;
+      }
+    }
+  }
+
+  .listData {
+    flex: 1 1;
+    display: flex;
+    flex-flow: column nowrap;
+
+    .listName {
+      color: white;
+      font-size: 16px;
+      flex: 1 1;
+    }
+
+    .listDate {
+      color: #999999;
+      font-size: 12px;
+      flex: 1 1;
+    }
+  }
+}
