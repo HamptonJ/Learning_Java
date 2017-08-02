@@ -12,7 +12,7 @@ function* init(dispatch, action) {
         const stompClient = yield call(initializeWebsocket);
         stompClient.subscribe('/topic/progress', (message) => {
             if (message.body)
-                dispatch(updateResult(JSON.parse(message.body)));
+                dispatch(updateResult(message.body));
         });
     } catch (error) {
         console.log("Error", error);
